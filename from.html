@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+	.small-box {
+      border: 1px solid black;
+      width: 1px;
+      height: 1px;
+      padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<center><h2>ใบสมัครเข้าศึกษาวิทยาลัย
+<br>พณิชยการอินทราชัย</h2></center>
+
+  <label for="name">ชื่อ-สกุล</label>
+  <input type="name" id="name" name="name">
+  
+  &nbsp;<label for="blood type">หมู่เลือด:</label>
+    <select id="blood type" name="blood type">
+      <option value="AB">AB</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="O">O</option>
+    </select>
+  
+  &nbsp;<label for="name">เลขประจำตัว</label>
+  <input type="text" id="citizen-id" name="citizen-id" maxlength="13">
+  
+  
+  <br><br><label for="nationality">สัญชาติ</label>
+  <input type="nationality" id="nationality" name="nationality"size="7">
+  
+  <label for="1">เชื้อชาติ</label>
+  <input type="1" id="1" name="1"size="7">
+  
+  <label for="birthdate">วันเกิด:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+    
+    <label for="2">กำลังศึกษา/สำเร็็จการศึกษาชั้น</label>
+  <select id="2" name="2">
+      <option value="1">มัธยมศึกษาปีที่3</option>
+      <option value="2">มัธยมศึกษาปีที่6</option>
+      <option value="3">ประกาศนียบัตรวิชาชีพชั้นปีที่3</option>
+    </select>
+    
+    <label for="3">ปีการศึกษา</label>
+  <select id="3" name="3">
+      <option value="1">2566</option>
+      <option value="2">2565</option>
+      <option value="3">2564</option>
+      <option value="4">2563</option>
+      <option value="5">2562</option>
+      <option value="6">2561</option>
+      <option value="7">2560</option>
+      <option value="8">2559</option>
+      <option value="9">2558</option>
+      <option value="10">2557</option>
+    </select>
+    
+      <br><br><label for="4">โรงเรียน/วิทยาลัย</label>
+  <input type="4" id="4" name="4">
+  
+  <label for="5">จังหวัด</label>
+  <select id="province" name="province">
+      <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+      <option value="กระบี่">กระบี่</option>
+      <option value="กาญจนบุรี">กาญจนบุรี</option>
+      <option value="กาฬสินธุ์">กาฬสินธุ์</option>
+      <option value="กำแพงเพชร">กำแพงเพชร</option>
+      <option value="ขอนแก่น">ขอนแก่น</option>
+      <option value="จันทบุรี">จันทบุรี</option>
+      <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+      <option value="ชลบุรี">ชลบุรี</option>
+      <option value="ชัยนาท">ชัยนาท</option>
+      <option value="ชัยภูมิ">ชัยภูมิ</option>
+      <option value="ชุมพร">ชุมพร</option>
+      <option value="เชียงราย">เชียงราย</option>
+      <option value="เชียงใหม่">เชียงใหม่</option>
+      <option value="ตรัง">ตรัง</option>
+      <option value="ตราด">ตราด</option>
+      <option value="ตาก">ตาก</option>
+      <option value="นครนายก">นครนายก</option>
+      <option value="นครปฐม">นครปฐม</option>
+      <option value="นครพนม">นครพนม</option>
+      <option value="นครราชสีมา">นครราชสีมา</option>
+      <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
+      <option value="นครสวรรค์">นครสวรรค์</option>
+      <option value="นนทบุรี">นนทบุรี</option>
+      <option value="นราธิวาส">นราธิวาส</option>
+      <option value="น่าน">น่าน</option>
+      <option value="บึงกาฬ">บึงกาฬ</option>
+      <option value="บุรีรัมย์">บุรีรัมย์</option>
+      <option value="ปทุมธานี">ปทุมธานี</option>
+      <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
+      <option value="ปราจีนบุรี">ปราจีนบุรี</option>
+      <option value="ปัตตานี">ปัตตานี</option>
+      <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
+      <option value="พังงา">พังงา</option>
+      <option value="พัทลุง">พัทลุง</option>
+      <option value="พิจิตร">พิจิตร</option>
+      <option value="พิษณุโลก">พิษณุโลก</option>
+      <option value="เพชรบุรี">เพชรบุรี</option>
+      <option value="เพชรบูรณ์">เพชรบูรณ์</option>
+      <option value="แพร่">แพร่</option>
+      <option value="พะเยา">พะเยา</option>
+      <option value="ภูเก็ต">ภูเก็ต</option>
+      <option value="มหาสารคาม">มหาสารคาม</option>
+      <option value="มุกดาหาร">มุกดาหาร</option>
+      <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+      <option value="ยโสธร">ยโสธร</option>
+      <option value="ยะลา">ยะลา</option>
+      <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
+      <option value="ระนอง">ระนอง</option>
+      <option value="ระยอง">ระยอง</option>
+      <option value="ราชบุรี">ราชบุรี</option>
+      <option value="ลพบุรี">ลพบุรี</option>
+      <option value="ลำปาง">ลำปาง</option>
+      <option value="ลำพูน">ลำพูน</option>
+      <option value="เลย">เลย</option>
+      <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+      <option value="สกลนคร">สกลนคร</option>
+      <option value="สงขลา">สงขลา</option>
+      <option value="สตูล">สตูล</option>
+      <option value="สมุทรปราการ">สมุทรปราการ</option>
+      <option value="สมุทรสงคราม">สมุทรสงคราม</option>
+      <option value="สมุทรสาคร">สมุทรสาคร</option>
+      <option value="สระแก้ว">สระแก้ว</option>
+      <option value="สระบุรี">สระบุรี</option>
+      <option value="สิงห์บุรี">สิงห์บุรี</option>
+      <option value="สุโขทัย">สุโขทัย</option>
+      <option value="สุพรรณบุรี">สุพรรณบุรี</option>
+      <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+      <option value="สุรินทร์">สุรินทร์</option>
+      <option value="หนองคาย">หนองคาย</option>
+      <option value="หนองบัวลำภู">หนองบัวลำภู</option>
+      <option value="อ่างทอง">อ่างทอง</option>
+      <option value="อุดรธานี">อุดรธานี</option>
+      <option value="อุทัยธานี">อุทัยธานี</option>
+      <option value="อุตรดิตถ์">อุตรดิตถ์</option>
+      <option value="อุบลราชธานี">อุบลราชธานี</option>
+      <option value="อำนาจเจริญ">อำนาจเจริญ</option>
+    </select><br><br>
+    
+    <label for="6">ผลการเรียน  คะแนนเฉี่ย(GPA)</label>
+  <input type="6" id="6" name="6">
+    <br><br><hr>
+    
+    <br><label for="7">ที่อยู่ปัจจุบันเลขที่</label>
+  <input type="7" id="7" name="7">
+  
+  <label for="7">หมู่ที่</label>
+  <input type="7" id="7" name="7" size="2"> 
+  
+    <label for="7">ถนน</label>
+  <input type="7" id="7" name="7" > 
+  
+  <br><br><label for="7">ตำบล</label>
+  <input type="7" id="7" name="7" > 
+  
+  <label for="7">อำเภอ</label>
+  <input type="7" id="7" name="7" > 
+  
+  <label for="5">จังหวัด</label>
+  <select id="province" name="province">
+      <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+      <option value="กระบี่">กระบี่</option>
+      <option value="กาญจนบุรี">กาญจนบุรี</option>
+      <option value="กาฬสินธุ์">กาฬสินธุ์</option>
+      <option value="กำแพงเพชร">กำแพงเพชร</option>
+      <option value="ขอนแก่น">ขอนแก่น</option>
+      <option value="จันทบุรี">จันทบุรี</option>
+      <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+      <option value="ชลบุรี">ชลบุรี</option>
+      <option value="ชัยนาท">ชัยนาท</option>
+      <option value="ชัยภูมิ">ชัยภูมิ</option>
+      <option value="ชุมพร">ชุมพร</option>
+      <option value="เชียงราย">เชียงราย</option>
+      <option value="เชียงใหม่">เชียงใหม่</option>
+      <option value="ตรัง">ตรัง</option>
+      <option value="ตราด">ตราด</option>
+      <option value="ตาก">ตาก</option>
+      <option value="นครนายก">นครนายก</option>
+      <option value="นครปฐม">นครปฐม</option>
+      <option value="นครพนม">นครพนม</option>
+      <option value="นครราชสีมา">นครราชสีมา</option>
+      <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
+      <option value="นครสวรรค์">นครสวรรค์</option>
+      <option value="นนทบุรี">นนทบุรี</option>
+      <option value="นราธิวาส">นราธิวาส</option>
+      <option value="น่าน">น่าน</option>
+      <option value="บึงกาฬ">บึงกาฬ</option>
+      <option value="บุรีรัมย์">บุรีรัมย์</option>
+      <option value="ปทุมธานี">ปทุมธานี</option>
+      <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
+      <option value="ปราจีนบุรี">ปราจีนบุรี</option>
+      <option value="ปัตตานี">ปัตตานี</option>
+      <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
+      <option value="พังงา">พังงา</option>
+      <option value="พัทลุง">พัทลุง</option>
+      <option value="พิจิตร">พิจิตร</option>
+      <option value="พิษณุโลก">พิษณุโลก</option>
+      <option value="เพชรบุรี">เพชรบุรี</option>
+      <option value="เพชรบูรณ์">เพชรบูรณ์</option>
+      <option value="แพร่">แพร่</option>
+      <option value="พะเยา">พะเยา</option>
+      <option value="ภูเก็ต">ภูเก็ต</option>
+      <option value="มหาสารคาม">มหาสารคาม</option>
+      <option value="มุกดาหาร">มุกดาหาร</option>
+      <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+      <option value="ยโสธร">ยโสธร</option>
+      <option value="ยะลา">ยะลา</option>
+      <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
+      <option value="ระนอง">ระนอง</option>
+      <option value="ระยอง">ระยอง</option>
+      <option value="ราชบุรี">ราชบุรี</option>
+      <option value="ลพบุรี">ลพบุรี</option>
+      <option value="ลำปาง">ลำปาง</option>
+      <option value="ลำพูน">ลำพูน</option>
+      <option value="เลย">เลย</option>
+      <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+      <option value="สกลนคร">สกลนคร</option>
+      <option value="สงขลา">สงขลา</option>
+      <option value="สตูล">สตูล</option>
+      <option value="สมุทรปราการ">สมุทรปราการ</option>
+      <option value="สมุทรสงคราม">สมุทรสงคราม</option>
+      <option value="สมุทรสาคร">สมุทรสาคร</option>
+      <option value="สระแก้ว">สระแก้ว</option>
+      <option value="สระบุรี">สระบุรี</option>
+      <option value="สิงห์บุรี">สิงห์บุรี</option>
+      <option value="สุโขทัย">สุโขทัย</option>
+      <option value="สุพรรณบุรี">สุพรรณบุรี</option>
+      <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+      <option value="สุรินทร์">สุรินทร์</option>
+      <option value="หนองคาย">หนองคาย</option>
+      <option value="หนองบัวลำภู">หนองบัวลำภู</option>
+      <option value="อ่างทอง">อ่างทอง</option>
+      <option value="อุดรธานี">อุดรธานี</option>
+      <option value="อุทัยธานี">อุทัยธานี</option>
+      <option value="อุตรดิตถ์">อุตรดิตถ์</option>
+      <option value="อุบลราชธานี">อุบลราชธานี</option>
+      <option value="อำนาจเจริญ">อำนาจเจริญ</option>
+    </select><br><br>
+  
+  <label for="7">รหัสไปรษณีย์</label>
+  <input type="7" id="7" name="7" size="8"> 
+  
+ 
+  <label for="7">เบอร์โทรศัพท์</label>
+  <input type="7" id="7" name="7" > 
+  
+  <br><br><hr>
+  
+  <br><label for="8">ชื่อบิดา</label>
+  <input type="8" id="8" name="8">
+  
+  
+  <label for="8">อายุ</label>
+  
+
+  
+  
+  
+  <br><br><label for="course">คอร์สที่สนใจ:</label>
+    <select id="course" name="course">
+      <option value="english">ภาษาอังกฤษ</option>
+      <option value="math">คณิตศาสตร์</option>
+      <option value="science">วิทยาศาสตร์</option>
+    </select><br><br>
+  
+
+  
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+  <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
